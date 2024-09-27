@@ -7,8 +7,11 @@ const rl = readline.createInterface({
 
 rl.question("Sisestage ainepunktide arv :", ainepunktid =>{
     rl.question("Sisestage nädalate arv :", nädalad => {
-        let ajakulu = 26;
-        let 
+        let ajakulu = ainepunktid * 26;
+        let eeldatav = ajakulu / nädalad;
+        let ymardus = Math.round(eeldatav);
+        console.log(ymardus);
+        rl.close();
     });
 });
 
